@@ -6,7 +6,9 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smooth
 
 */
 $(document).ready(function () {
+   
    console.log("W3C Smooth Scrool enabled.")
+   
    $("a").on('click', function (event) {
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {

@@ -13,6 +13,16 @@ label {
     text-decoration: underline;
 }
 
+input[type=checkbox]{
+   visibility: hidden;
+}
+
+label i {
+    float:right;
+    color:darkgreen;
+    margin-right:20px;
+}
+
 input[type="email"],
 input[type="tel"],
 input[type="text"] {
