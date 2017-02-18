@@ -1,0 +1,54 @@
+/*------------ON TOP OF PAGE------------*/
+nav {
+    min-height: 40px;
+    width: 100%;
+    background-color: #f9fcfe;
+    z-index: 30;
+    border-bottom: none;
+    position: fixed;
+}
+
+nav li {
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    z-index: 35;
+    color: white;
+}
+
+li:hover {
+    color: #1ac056;
+}
+
+
+/*-------------CLASS REST---------------*/
+
+nav.rest {
+    min-height: 40px;
+    width: 100%;
+    background-color: none;
+    z-index: 30;
+    border-bottom: 1px solid #1ac056;
+    position: fixed;
+}
+
+nav.rest li {
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    z-index: 35;
+    color: #1ac056;
+}
+
+nav.rest + li:hover {
+    color: black;
+}
+
+
+
