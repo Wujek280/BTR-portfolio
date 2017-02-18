@@ -6,6 +6,8 @@
     color: #fff;
     background-repeat: no-repeat;
     display: inline-block;
+   -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .portfolio-item-mask {

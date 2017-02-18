@@ -12,14 +12,12 @@ label[for=menu-toggle] {
    color: none;
    transition: 0.3s 'all';
 }
-
-.row, .column{
+.container-fluid {
+   padding:0;
+}
+.row{
    margin: auto;
 }
-li {
-   float:right;
-}
-
 /*------------ON TOP OF PAGE------------*/
 
 .nav {
