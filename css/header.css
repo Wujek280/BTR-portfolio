@@ -2,10 +2,11 @@
 nav {
     min-height: 40px;
     width: 100%;
-    background-color: #f9fcfe;
+    background-color: transparent;
     z-index: 30;
     border-bottom: none;
     position: fixed;
+    transition: 0.3s background-color;
 }
 
 nav li {
@@ -17,6 +18,7 @@ nav li {
     font-weight: bold;
     z-index: 35;
     color: white;
+
 }
 
 li:hover {
@@ -29,10 +31,11 @@ li:hover {
 nav.rest {
     min-height: 40px;
     width: 100%;
-    background-color: none;
+    background-color: ivory;
     z-index: 30;
     border-bottom: 1px solid #1ac056;
     position: fixed;
+    transition: 0.3s background-color;
 }
 
 nav.rest li {
