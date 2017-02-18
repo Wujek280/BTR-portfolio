@@ -13,10 +13,12 @@ label[for=menu-toggle] {
    transition: 0.3s 'all';
 }
 
-.row{
-   margin:auto;
+.row, .column{
+   margin: auto;
 }
-
+li {
+   float:right;
+}
 
 /*------------ON TOP OF PAGE------------*/
 
