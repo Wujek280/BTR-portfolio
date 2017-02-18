@@ -1,3 +1,6 @@
+body {
+   background-color: ivory;
+}
 
 label[for=menu-toggle] {
    float: right;
@@ -9,6 +12,11 @@ label[for=menu-toggle] {
    color: none;
    transition: 0.3s 'all';
 }
+
+.row{
+   margin:auto;
+}
+
 
 /*------------ON TOP OF PAGE------------*/
 
@@ -24,7 +32,7 @@ label[for=menu-toggle] {
    transition: 0.3s background-color;
 }
 
-.nav li a{
+.nav li a {
    width: 150px;
    height: 40px;
    display: inline-block;
@@ -32,35 +40,42 @@ label[for=menu-toggle] {
    text-align: center;
    font-weight: bold;
    z-index: 35;
-   color: white;
+   color: ivory;
+   transition: 0.3s 'all';
+
 }
 
 li>a:hover {
    color: #1ac056;
+   transition: 0.3s 'all';
+
 }
-.navbar-default .navbar-nav>li>a{
-   color:#1ac056;
+
+.navbar-default .navbar-nav>li>a {
+   color: #1ac056;
+   transition: 0.3s 'all';
+
 }
+
 
 /*-------------CLASS REST---------------*/
 
-.navbar-default .scrool.navbar-nav>li>a
-
-.scrool ul{
+.navbar-default .scrool.navbar-nav>li>a .scrool ul {
    background-color: ivory;
    border-bottom: 1px solid #1ac056;
    transition: 0.3s background-color;
 }
 
-.scrool , .scrool a  {
+.scrool,
+.scrool a {
    color: #1ac056;
 }
 
-.scrool li:hover  {
+.scrool li:hover {
    color: black;
 }
-   
-u.navbar-nav > a{
+
+u.navbar-nav > a {
    color: #000;
    display: block;
 }
