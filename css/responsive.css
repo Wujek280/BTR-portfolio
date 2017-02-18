@@ -1,0 +1,51 @@
+@media (max-width:1200px) {
+    .portfolio-item:nth-child(3n) {
+        width: 1000px;
+    }
+    .portfolio-item-mask > #photo3 {
+        width: 1000px;
+    }
+}
+
+@media(max-width:1200px) {}
+
+@media (max-width:786px) {
+    .column1-2 {
+        width: 95%;
+        text-align: center;
+        margin: auto;
+    }
+    h3 {
+        text-align: center;
+        
+    }
+    h2 {
+        margin: 0px 0;
+    }
+}
+
+@media (max-width:680px) {}
+
+@media (max-width:480px) {
+    label[for="menu-toggle"] {
+        cursor: pointer;
+        color: chartreuse;
+        transition: 0.3s height;
+    }
+    #menu-toggle {
+        display: none;
+        /* hide the checkbox */
+    }
+    #menu {
+        display: none;
+    }
+    ul {
+        display: block;
+        text-align: right;
+        clear: both;
+        float: initial;
+    }
+    #menu-toggle:checked + #menu {
+        display: flex;
+    }
+}
