@@ -28,7 +28,7 @@ li:hover {
 
 /*-------------CLASS REST---------------*/
 
-nav.rest {
+nav.scrool {
     min-height: 40px;
     width: 100%;
     background-color: ivory;
@@ -38,7 +38,7 @@ nav.rest {
     transition: 0.3s background-color;
 }
 
-nav.rest li {
+nav.scrool li {
     width: 150px;
     height: 40px;
     display: inline-block;
@@ -49,7 +49,7 @@ nav.rest li {
     color: #1ac056;
 }
 
-nav.rest + li:hover {
+nav.scrool li:hover {
     color: black;
 }
 
