@@ -3,6 +3,12 @@ form {
     line-height: 1.5em;
 }
 
+input {
+   display: block;
+   margin-top:10px;
+   margin-bottom:10px;
+}
+
 label {
     color: white;
 }
@@ -31,9 +37,8 @@ input[type="text"] {
     min-height: 36px;
     background-color: #2B4a64;
     border-radius: 2px;
-    margin-bottom: 7px;
     color: white;
-    margin: 5px 0;
+    
 }
 
 input:focus[type="email"],
