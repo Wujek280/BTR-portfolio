@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl"da
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/responsive.css">
+<!--<link rel="stylesheet" href="css/responsive.css">-->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+       
         
     <link href="https://fonts.googleapis.com/css?family=
     Roboto:300,400,700,700i,900" rel="stylesheet">     
@@ -18,30 +21,45 @@
     </head>
 
 <body>       
-   
-      <!--   nav-list -->
+         
+
+   <div class="navbar-header">
+     
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bar" aria-expanded="false">
+
+       <ul class="nav navbar-nav navbar-right pull-right">
+          <li><a href="#o-mnie">O mnie</a></li>
+          <li><a href="#moje-umiejetnosci">Umiejetności</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+       </ul>
+
+      </button>
+     
+    </div>       
+          
+          
+<nav  class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div  id="bar"  class="nav collapse navbar-collapse" >
+     
+      <ul class="navbar-right nav navbar-nav ">
+       <li><a href="#o-mnie">O mnie</a></li>
+       <li><a href="#moje-umiejetnosci">Umiejetności</a></li>
+       <li><a href="#portfolio">Portfolio</a></li>
+       <li><a href="#footer">Kontakt</a></li>
+      </ul>
       
-       <nav>
-       
-          <label for="menu-toggle"> <i style=" font-size:2em; float:right; padding:15px; color:darkgreen;" class="fa fa-bars" aria-hidden="true"></i> </label>
-
-          <input type="checkbox" id="menu-toggle" >
-            
-        <ul id="menu">
-            <a href="#footer">
-                <li>kontakt</li>
-            </a>
-            <a href="#portfolio">
-                <li> portfolio</li>
-            </a>
-            <a href="#moje-umiejetnosci">
-                <li> umiejętnosci</li>
-            </a>
-            <a href="#o-mnie">
-                <li>O mnie</li>
-            </a>
-
-        </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  
+        
+ 
+           
         
     </nav>
     
@@ -51,7 +69,7 @@
     <div class="center-outer"> 
         <div class="center-inner">
 
-            <header> <!-- arcin J. Wójcik / Front End-Dev-->
+            <header> <!-- Marcin J. Wójcik / Front End-Dev-->
 
                 <h1> 
                 Marcin J.<span class="left"> Wójcik </span><br>
@@ -63,64 +81,68 @@
     </div>
       
 <!-- article :: O-mnie:shadow-box -->
-      
-<article class="box-shadow" class="center-outer">
 
-        <h2 id="o-mnie">O<span class="left" > mnie</span></h2>
+   <article class="center-outer box-shadow  column-lg-12 text-center">
+          <div class="row">
+           <h2 class="row" id="o-mnie">O<span class="left" > mnie</span></h2>
+          </div>
 
-        <figure id="o-mnie-figure" >
-        
-        <img src="gfx/img/jan-nowak.jpg" alt="polishboy-programmer">
+              <figure class="row" id="o-mnie-figure" >
+                  
+                  <div class="column col-lg-6">
+                 <img src="gfx/img/jan-nowak.jpg" alt="polishboy-programmer" >
+                  </div>
+                  
+                 
+                  <figcaption class="column col-lg-6 text-justify">
 
-            <figcaption>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad recusandae dolor eveniet ducimus, totam mollitia nam saepe nostrum debitis sit placeat in nobis aperiam dolorem iure dolorum. Incidunt, vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit!    
 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ad recusandae dolor eveniet ducimus, totam mollitia nam saepe nostrum debitis sit placeat in nobis aperiam dolorem iure dolorum. Incidunt, vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit!    
+                  </figcaption>
+                 
+              </figure>  
+                
 
-            </figcaption>
-
-        </figure>    
-
-</article>
+   </article>
 
 
 <!--   section :: Umiejetnosci  -->
 
 <section>
          
-    <h2 id="moje-umiejetnosci">
-    Moje<span class="bolding"> umiejętności</span> 
+    <h2 id="moje-umiejetnosci" class="row text-center">
+    Moje<span class="bolding column text-center"> umiejętności</span> 
     </h2>
-       
-        <article>
+        <article class="column col-md-12 text-justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus alias quae optio eligendi, molestiae unde facilis nobis laboriosam at sapiente, voluptatibus vitae atque harum adipisci, dignissimos a, vel eius voluptatem
         </article>
     
   <!--  Fiugures -->
     
-    <div class="center-outer">        
+    <div class="center-outer row">        
      
-       <figure>
+       <figure class="column col-lg-3 col-md-6">
           <img src="gfx/icons/css3.png">
           <figcaption style="text-align:center;">
               CSS3
           </figcaption>
        </figure>
 
-        <figure>
+        <figure class="column col-lg-3 col-md-6">
           <img src="gfx/icons/html5.png">    
           <figcaption style="text-align:center;">
               HTML5
           </figcaption>
        </figure>
 
-        <figure>
+        <figure class="column col-lg-3 col-md-6">
           <img src="gfx/icons/jquery.png">
           <figcaption style="text-align:center;">
               jQuery
           </figcaption>
        </figure>
 
-        <figure>
+        <figure class="column col-lg-3 col-md-6">
           <img src="gfx/icons/js.png">
           <figcaption >
               JavaScript
@@ -136,54 +158,57 @@
      
 <section>
     
-    <h2 id="portfolio">
+    <h2 id="portfolio" class="row">
     Moje<span class="bolding"> portfolio </span> 
     </h2>
+    <div class="container-fluid">
     
-      <div class="center-outer">
+      <div class="row">
         
-        <div class="portfolio-item" id="photo1">
-          <div class="portfolio-item-mask">
-             <div class="portfolio-item-mask-content">
-                 <p>Lorem </p> 
-                 <p>dolor sit amet, consectetur adipisicing elit. Alias quos amet sapiente cumque tempore, ex unde veritatis, dolores sequi totam quod voluptatem magnam cum labore blanditiis ratione laudantium vitae eligendi?</p><br>
-                 <i class="fa fa-link fa-2x  fa-inverse " aria-hidden="true"></i>
-             </div>              
-          </div>           
-        </div>
-        
-        <div class="portfolio-item" id="photo2">
-          <div class="portfolio-item-mask">
-             <div class="portfolio-item-mask-content">
-                                 <p>Lorem </p> 
-                 <p>dolor sit amet, consectetur adipisicing elit. Alias quos amet sapiente cumque tempore, ex unde veritatis, dolores sequi totam quod voluptatem magnam cum labore blanditiis ratione laudantium vitae eligendi?</p><br>
-                 <i class="fa fa-link fa-2x  fa-inverse " aria-hidden="true"></i>
-                 
-             </div>                 
-          </div>           
-        </div>
-        
-        <div class="portfolio-item" id="photo3">
-         <div class="portfolio-item-mask">
-             <div class="portfolio-item-mask-content">
-                                 <p>Lorem </p> 
-                 <p>dolor sit amet, consectetur adipisicing elit. Alias quos amet sapiente cumque tempore, ex unde veritatis, dolores sequi totam quod voluptatem magnam cum labore blanditiis ratione laudantium vitae eligendi?</p><br>
-                 <i class="fa fa-link fa-2x  fa-inverse " aria-hidden="true"></i>
-                 
-             </div>                 
-          </div>           
-        </div>
-        
+           <div class="portfolio-item  col-lg-4 col-md-6 col-xs-12" id="photo1">
+             <div class="portfolio-item-mask">
+                <div class="portfolio-item-mask-content">
+                    <p>Lorem </p> 
+                    <p>dolor sit amet, consectetur adipisicing elit. Alias quos amet sapiente cumque tempore, ex unde veritatis, dolores sequi totam quod voluptatem magnam cum labore blanditiis ratione laudantium vitae eligendi?</p><br>
+                    <i class="fa fa-link fa-2x fa-inverse " aria-hidden="true"></i>
+                </div>              
+             </div>           
+           </div>
+
+           <div class="portfolio-item  col-lg-4 col-md-6 col-xs-12" id="photo2">
+             <div class="portfolio-item-mask">
+                <div class="portfolio-item-mask-content">
+                                    <p>Lorem </p> 
+                    <p>dolor sit amet, consectetur adipisicing elit. Alias quos amet sapiente cumque tempore, ex unde veritatis, dolores sequi totam quod voluptatem magnam cum labore blanditiis ratione laudantium vitae eligendi?</p><br>
+                    <i class="fa fa-link fa-2x fa-inverse " aria-hidden="true"></i>
+
+                </div>                 
+             </div>           
+           </div>
+
+      
+           <div class="portfolio-item col-lg-4 col-md-12 col-xs-12" id="photo3">
+            <div class="portfolio-item-mask ">
+                <div class="portfolio-item-mask-content">
+                                    <p>Lorem </p> 
+                    <p>dolor sit amet, consectetur adipisicing elit. Alias quos amet sapiente cumque tempore, ex unde veritatis, dolores sequi totam quod voluptatem magnam cum labore blanditiis ratione laudantium vitae eligendi?</p><br>
+                    <i class="fa fa-link fa-2x fa-inverse " aria-hidden="true"></i>
+
+                </div>                 
+             </div>           
+           </div>
+     
       </div>
         
+     </div>
  
 </section>
 
   <!-- Section :: contact -->
   
-  <section id="contact" >      
+  <section class="row" id="contact" >      
     
-        <div class="column1-2" >
+        <div class="column1-2 center-outer column col-lg-5 col-md-12 col-xs-12" >
            
             <h3>Marcin J. <span class="left"> Wójcik</span></h3>
             
@@ -201,30 +226,33 @@
             </a>
             
             <br>
+              
+              <div class="row center-outer">
                
-                <div class="icon" id="icon1" >
+                <div class="icon column col-md-1" id="icon1" >
                 <i class="fa fa-facebook fa-3x  fa-inverse" aria-hidden="true"></i>
                 </div>
 
-                <div class="icon" id="icon2">
+                <div class="icon column" id="icon2">
                 <i class="fa fa-google-plus-official fa-3x  fa-inverse" aria-hidden="true"></i>
                 </div>
 
-                <div class="icon" id="icon3">
+                <div class="icon column" id="icon3">
                 <i class="fa fa-linkedin fa-3x  fa-inverse" aria-hidden="true"></i>
                 </div>
 
-                <div class="icon" id="icon4">
+                <div class="icon column" id="icon4">
                 <i class="fa fa-telegram fa-3x  fa-inverse" aria-hidden="true"></i>
                 </div>
                 
                 <div style="clear:both"></div>
                 
-                </div>
-
+              </div>
         </div>
+        
+   <div class="row center-outer">
     
-        <div class="column1-2">
+        <div class="column1-2 column col-lg-5 col-md-12 col-xs-12 text-left">
 
             <form action="https://formspree.io/wujek5151@gmail.com" id="myform" method="POST">
 
@@ -241,21 +269,30 @@
             </form>
             
         </div>
+     </div>
         
         <div style="clear:both"></div>
                          
     <!-- Footer -->
      
   </section>
-  <footer id="footer">Marcin J. Wójcik &copy;</footer>
+  <footer class="row" id="footer">Marcin J. Wójcik &copy;</footer>
   
     <!--  Scripts-->
   
   <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/w3cSmoothScrool.js"></script>
+  <script src="js/header.js"></script>
   <script src="js/main.js"></script>
    
 
 </body>
 
 </html>
+
+<!--
+       <label for="menu-toggle"> <i class="fa fa-bars fa-2x" aria-hidden="true"></i> </label>
+<input type="checkbox" id="menu-toggle">
+        <ul id="menu">
+-->       
