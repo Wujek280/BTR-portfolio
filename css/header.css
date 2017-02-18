@@ -1,57 +1,69 @@
+
+label[for=menu-toggle] {
+   float: right;
+}
+
+.navbar-default {
+   background-color: transparent;
+   border: none;
+   color: none;
+   
+}
+
+.navbar-nav>li>a:hover{
+   color: #1ac056;
+}
+
+ul>li>a{
+   color: blue;
+}
 /*------------ON TOP OF PAGE------------*/
-nav {
-    min-height: 40px;
-    width: 100%;
-    background-color: transparent;
-    z-index: 30;
-    border-bottom: none;
-    position: fixed;
-    transition: 0.3s background-color;
+
+.nav {
+   padding-top: 0px;
+   min-height: 40px;
+   width: 100%;
+   background-color: transparent;
+   z-index: 30;
+   border-bottom: none;
+   position: fixed;
+   left: 0;
+   transition: 0.3s background-color;
 }
 
-nav li {
-    width: 150px;
-    height: 40px;
-    display: inline-block;
-    float: right;
-    text-align: center;
-    font-weight: bold;
-    z-index: 35;
-    color: white;
-
+.nav li a{
+   width: 150px;
+   height: 40px;
+   display: inline-block;
+   float: right;
+   text-align: center;
+   font-weight: bold;
+   z-index: 35;
+   color: white;
 }
 
-li:hover {
-    color: #1ac056;
+li>a:hover {
+   color: #1ac056;
 }
 
 
 /*-------------CLASS REST---------------*/
 
-nav.scrool {
-    min-height: 40px;
-    width: 100%;
-    background-color: ivory;
-    z-index: 30;
-    border-bottom: 1px solid #1ac056;
-    position: fixed;
-    transition: 0.3s background-color;
+.scrool , .scrool > a{
+   background-color: ivory;
+   border-bottom: 1px solid #1ac056;
+   transition: 0.3s background-color;
 }
 
-nav.scrool li {
-    width: 150px;
-    height: 40px;
-    display: inline-block;
-    float: right;
-    text-align: center;
-    font-weight: bold;
-    z-index: 35;
-    color: #1ac056;
+.scrool , .scrool a  {
+   color: #1ac056;
 }
 
-nav.scrool li:hover {
-    color: black;
+.scrool li:hover #bar div div ul li:hover {
+   color: black;
 }
-
-
-
+   
+u.navbar-nav > a{
+   color: #000;
+   display: block;
+}
